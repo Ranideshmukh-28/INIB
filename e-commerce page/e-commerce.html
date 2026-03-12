@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-Commerce</title>
+
+<style>
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+background: #f4f4f4;
+
+}
+
+nav {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 80px;
+background: #111;
+color: white;
+
+}
+
+.logo {
+
+font-size: 24px;
+list-style: none;
+
+}
+
+nav ul {
+
+display: flex;
+list-style: none;
+
+}
+
+nav ul li {
+
+margin: 0 20px;
+
+}
+
+nav ul li a {
+
+color: white;
+text-decoration: none;
+font-size: 16px;
+
+}
+
+nav ul li a:hover {
+
+color: #ff9800;
+
+}
+
+.hero {
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 80px;
+background: white;
+
+}
+
+.hero-text {
+
+width: 50%;
+
+}
+
+.hero-text p {
+
+margin-bottom: 20px;
+
+}
+
+.btn {
+
+display: inline-block;
+padding: 12px 20px;
+background: #ff9800;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+margin-right: 10px;
+
+}
+
+.btn:hover {
+
+background: #e68900;
+
+}
+
+.products {
+text-align: center;
+padding: 60px 80px;
+text-align: center;
+
+}
+
+.products h2 {
+
+margin-bottom: 40px;
+
+}
+
+.product-container {
+
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 30px;
+padding: 20px;
+
+}
+
+.product {
+
+background: white;
+padding: 20px;
+border-radius: 10px;
+width: 250px;
+text-align: center;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.product img {
+
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+
+}
+
+.product h3 {
+
+margin: 10px 0;
+
+}
+
+.product button {
+
+padding: 10px;
+border: none;
+background: #ff9800;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+.user {
+
+text-align: center;
+padding: 60px;
+background: #222;
+color: white;
+
+}
+
+.user button {
+
+margin: 10px;
+padding: 12px 20px;
+border: none;
+background: #ff9800;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+footer {
+
+text-align: center;
+padding: 20px;
+background: #111;
+color: white;
+margin-top: 40px;
+
+}
+
+@media(max-width:900px){
+.product-container{
+grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.product-container{
+grid-template-columns: 1fr;
+}
+}
+
+</style>
+</head>
+
+
+<body>
+    
+<nav>
+
+<div class="logo">ShopEase</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Best Deals on Latest Products</h1>
+<p>Shop the newest trends with amazing discounts and offers</p>
+
+<a href="#" class="btn">Shop Now</a>
+<a href="#" class="btn">View Offers</a>
+</div>
+
+<div class="hero-img">
+<img src="deals.jpg" alt="">
+
+</div>
+
+</section>
+
+<section class="products">
+<h2>Best Deals</h2>
+
+<div class="product">
+
+<img src="wireless.jpg" alt="">
+<h3>wireless Headphones</h3>
+<p>$49</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="gaminghouse.jpg" alt="">
+<h3>Gaming House</h3>
+<p>$29</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<div class="product">
+<img src="speaker.jpg" alt="">
+<h3>Bluetooth Speaker</h3>
+<p>$39</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="mobilestand.jpg" alt="">
+<h3>Smartphone Stand</h3>
+<p>$15</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="gaming.jpg" alt="">
+<h3>Gaming Headset</h3>
+<p>$69</p>
+<button>Add to Cart</button>
+</div>
+
+</section>
+
+<section class="user">
+
+<h2>Join Our Store</h2>
+<p>Create an account for personalized shopping.</p>
+
+<button onclick="register()">Sign Up</button>
+<button onclick="register()">Login</button>
+
+</section>
+
+<footer>
+
+<script>
+
+function register() {
+alert("Registration page coming soon!");
+
+}
+
+function login() {
+alert("Login page coming soon!");
+
+}
+
+</script>
+
+</footer>
+
+
+</body>
+</html>
